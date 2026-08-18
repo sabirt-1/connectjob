@@ -1,0 +1,49 @@
+
+
+
+.profile-completion{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:10px;
+
+    background:#eee;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:20px 0;
+
+}
+
+.progress{
+
+    height:100%;
+
+    background:#1967d2;
+
+    transition:.5s;
+
+}
+
+.profile-completion h2{
+
+    color:#1967d2;
+
+    margin-bottom:10px;
+
+}
+

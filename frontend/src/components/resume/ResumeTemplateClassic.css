@@ -1,0 +1,196 @@
+
+
+
+.classic-resume{
+
+    width:850px;
+
+    max-width:100%;
+
+    margin:auto;
+
+    padding:55px;
+
+    background:#fff;
+
+    color:#222;
+
+    border:1px solid #d9d9d9;
+
+    box-shadow:0 6px 25px rgba(0,0,0,.08);
+
+    box-sizing:border-box;
+
+}
+
+.classic-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    border-bottom:2px solid #222;
+
+    padding-bottom:20px;
+
+}
+
+.classic-header h1{
+
+    margin:0;
+
+    font-size:38px;
+
+    letter-spacing:1px;
+
+}
+
+.classic-title{
+
+    margin-top:8px;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+.classic-contact{
+
+    margin-top:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+.classic-resume section{
+
+    margin-top:28px;
+
+}
+
+.classic-resume h2{
+
+    font-size:20px;
+
+    margin-bottom:16px;
+
+    padding-bottom:6px;
+
+    border-bottom:1px solid #ccc;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.classic-item{
+
+    margin-bottom:20px;
+
+}
+
+.classic-item-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.classic-item h3{
+
+    margin:0;
+
+    font-size:18px;
+
+}
+
+.classic-item h4{
+
+    margin:5px 0;
+
+    color:#555;
+
+    font-weight:600;
+
+}
+
+.classic-item p{
+
+    margin:6px 0;
+
+    line-height:1.7;
+
+    color:#444;
+
+}
+
+.classic-item small{
+
+    color:#777;
+
+    font-style:italic;
+
+}
+
+@media(max-width:768px){
+
+    .classic-resume{
+
+        width:100%;
+
+        padding:30px 20px;
+
+        box-shadow:none;
+
+        border:none;
+
+    }
+
+    .classic-header h1{
+
+        font-size:30px;
+
+    }
+
+    .classic-contact{
+
+        flex-direction:column;
+
+        gap:8px;
+
+    }
+
+    .classic-item-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,241 @@
+
+
+
+.language-manager{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 6px 24px rgba(0,0,0,.08);
+
+}
+
+.language-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.language-header h2{
+
+    margin:0;
+
+    color:#222;
+
+}
+
+.language-form{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+.language-form input,
+
+.language-form select{
+
+    flex:1;
+
+    min-width:180px;
+
+    padding:12px 14px;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.25s;
+
+    background:#fff;
+
+}
+
+.language-form input:focus,
+
+.language-form select:focus{
+
+    border-color:#1967d2;
+
+    box-shadow:0 0 0 3px rgba(25,103,210,.12);
+
+}
+
+.add-language-btn{
+
+    background:#1967d2;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.add-language-btn:hover{
+
+    background:#1557b0;
+
+}
+
+.language-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+
+    gap:20px;
+
+}
+
+.language-card{
+
+    background:#f9fbff;
+
+    border:1px solid #e4ebf7;
+
+    border-radius:14px;
+
+    padding:18px;
+
+    transition:.25s;
+
+}
+
+.language-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.language-card h3{
+
+    margin:0 0 10px;
+
+    color:#222;
+
+    font-size:18px;
+
+}
+
+.language-level{
+
+    display:inline-block;
+
+    background:#eaf2ff;
+
+    color:#1967d2;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.language-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.language-actions button{
+
+    background:#dc3545;
+
+    color:#fff;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.25s;
+
+}
+
+.language-actions button:hover{
+
+    background:#bb2d3b;
+
+}
+
+.empty-language{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#777;
+
+    border:2px dashed #ddd;
+
+    border-radius:14px;
+
+    background:#fafafa;
+
+}
+
+@media(max-width:768px){
+
+    .language-form{
+
+        flex-direction:column;
+
+    }
+
+    .add-language-btn{
+
+        width:100%;
+
+    }
+
+}
+

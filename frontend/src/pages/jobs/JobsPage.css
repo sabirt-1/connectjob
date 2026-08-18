@@ -1,0 +1,393 @@
+
+
+
+.jobs-header{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.jobs-header h2{
+
+    margin:0;
+
+    font-size:30px;
+
+    color:#111827;
+
+}
+
+.jobs-header p{
+
+    margin-top:8px;
+
+    color:#6b7280;
+
+}
+
+.clear-filters{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.clear-filters:hover{
+
+    background:#1d4ed8;
+
+}
+
+.active-filters{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.filter-chip{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    padding:10px 16px;
+
+    border-radius:999px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.filter-chip button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#2563eb;
+
+    font-size:16px;
+
+}
+
+.empty-jobs{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:80px 30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.empty-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+@media(max-width:768px){
+
+.jobs-header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:center;
+
+}
+
+.clear-filters{
+
+    width:100%;
+
+}
+
+}
+
+
+
+.jobs-page {
+
+    background: #f5f7fc;
+
+    min-height: 100vh;
+
+    padding: 40px 0;
+}
+
+.jobs-container {
+
+    /* max-width: 1500px; */
+    /* max-width: 1700px; */
+    max-width: 1400px;
+    width: 100%;
+
+    margin: auto;
+
+    /* padding: 0 30px; */
+    padding: 0 40px;
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 30px;
+}
+
+.jobs-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.jobs-header {
+
+    background: white;
+
+    padding: 25px 30px;
+
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.05);
+}
+
+.jobs-header h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    color: #202124;
+}
+
+.active-filters{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.filter-chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#eaf3ff;
+
+    color:#1967d2;
+
+    padding:10px 16px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.filter-chip button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#1967d2;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+.jobs-header-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.clear-filters{
+
+    border:none;
+
+    background:#202124;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-weight:600;
+
+}
+
+.clear-filters:hover{
+
+    background:#1967d2;
+
+}
+
+.jobs-header p{
+
+    color:#6b7280;
+
+    margin-top:6px;
+
+}
+
+.empty-jobs{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:80px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.empty-jobs h2{
+
+    margin-bottom:10px;
+
+}
+
+.empty-jobs p{
+
+    color:#777;
+
+}
+
+@media (max-width: 992px) {
+
+    .jobs-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .jobs-container {
+
+        padding: 0 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 1 */
+/* 
+.jobs-page{
+
+    padding:40px;
+}
+
+.jobs-container{
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    gap:30px;
+}
+
+.jobs-list{
+
+    display:flex;
+
+    flex-direction:column;
+}
+ */
+
+

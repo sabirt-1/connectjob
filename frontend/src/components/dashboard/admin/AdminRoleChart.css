@@ -1,0 +1,38 @@
+
+
+
+.chart-card{
+
+    margin-top:35px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.chart-card h2{
+
+    margin-bottom:25px;
+
+    color:#1967d2;
+
+    text-align:center;
+
+}
+
+.chart-card canvas{
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+
+
+

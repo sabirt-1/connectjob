@@ -1,0 +1,29 @@
+
+
+
+.dashboard-shell{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#f5f7fc;
+
+}
+
+.dashboard-main{
+
+    flex:1;
+
+    padding:32px;
+
+}
+
+.dashboard-content{
+
+    margin-top:30px;
+
+}
+
+
+

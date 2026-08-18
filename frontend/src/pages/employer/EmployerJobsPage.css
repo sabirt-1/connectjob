@@ -1,0 +1,904 @@
+
+
+
+
+/* EMPLOYER JOBS PAGE */
+
+
+.ejobs-page {
+
+    width: 100%;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 4px 0 50px;
+
+    box-sizing: border-box;
+
+}
+
+
+   /* PAGE HEADER */
+
+.ejobs-header {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 24px 28px;
+
+    margin-bottom: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e6ebf3;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.055);
+
+}
+
+
+.ejobs-header-main {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    min-width: 0;
+
+}
+
+
+.ejobs-header-icon {
+
+    width: 54px;
+
+    height: 54px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    font-size: 23px;
+
+    box-shadow:
+        0 10px 22px
+        rgba(37, 99, 235, 0.22);
+
+}
+
+
+.ejobs-header-content {
+
+    min-width: 0;
+
+}
+
+
+.ejobs-header-content h1 {
+
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 28px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.6px;
+
+}
+
+
+.ejobs-header-content p {
+
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+   /* HEADER SUMMARY */
+
+.ejobs-header-summary {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 190px;
+
+    padding: 13px 17px;
+
+    border-radius: 17px;
+
+    background: #f5f8ff;
+
+    border: 1px solid #dbe7ff;
+
+}
+
+
+.ejobs-summary-number {
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    font-weight: 750;
+
+    box-shadow:
+        0 7px 17px
+        rgba(37, 99, 235, 0.20);
+
+}
+
+
+.ejobs-summary-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.ejobs-summary-content strong {
+
+    color: #172033;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.ejobs-summary-content span {
+
+    color: #7b8494;
+
+    font-size: 12px;
+
+}
+
+
+   /* JOB LIST HEADER */
+
+.ejobs-list-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin: 0 2px 20px;
+
+}
+
+
+.ejobs-list-heading h2 {
+
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 20px;
+
+    font-weight: 750;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.2px;
+
+}
+
+
+.ejobs-list-heading span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #7b8494;
+
+    font-size: 13px;
+
+}
+
+
+   /* JOB LIST CONTAINER */
+
+.ejobs-list {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    position: relative;
+
+}
+
+
+   /* LIST VIEW */
+
+.ejobs-list:not(:has(.job-card-grid)) {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+   /* CARD / GRID VIEW */
+
+.ejobs-list:has(.job-card-grid) {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+}
+
+
+   /* CARD WRAPPER */
+
+.ejobs-card-wrapper {
+
+    width: 100%;
+
+    min-width: 0;
+
+}
+
+
+.ejobs-card-wrapper > * {
+
+    width: 100%;
+
+}
+
+
+   /* GRID CARD WRAPPER */
+
+.ejobs-list:has(.job-card-grid)
+.ejobs-card-wrapper {
+
+    min-width: 0;
+
+}
+
+
+   /* VIEW TOGGLE */
+   /* Hide toggle on ALL employer cards first */
+
+.ejobs-card-wrapper
+.job-card:first-of-type
+.job-view-toggle {
+
+    display: none;
+
+}
+
+
+   /* SHOW TOGGLE ONLY ON FIRST CARD */
+
+.ejobs-card-wrapper:first-child
+.job-card:first-of-type
+.job-view-toggle {
+
+    display: flex;
+
+    position: absolute;
+
+    top: -62px;
+
+    right: 0;
+
+    background: #ffffff;
+
+    padding: 5px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, .07);
+
+    z-index: 10;
+
+}
+
+
+   /* VIEW TOGGLE BUTTONS */
+
+.ejobs-card-wrapper
+.job-view-toggle button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    padding: 8px 12px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease;
+
+}
+
+
+.ejobs-card-wrapper
+.job-view-toggle button:hover {
+
+    color: #2563eb;
+
+    background: #eff6ff;
+
+}
+
+
+.ejobs-card-wrapper
+.job-view-toggle button.active {
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 4px 12px
+        rgba(37, 99, 235, .25);
+
+}
+
+
+.ejobs-card-wrapper
+.job-view-toggle button:active {
+
+    transform: scale(.97);
+
+}
+
+
+   /* EMPTY STATE */
+
+.ejobs-empty {
+
+    padding: 75px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e6ebf3;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.055);
+
+}
+
+
+.ejobs-empty-icon {
+
+    width: 78px;
+
+    height: 78px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    font-size: 37px;
+
+}
+
+
+.ejobs-empty-title {
+
+    margin: 0 0 10px;
+
+    color: #111827;
+
+    font-size: 23px;
+
+    font-weight: 750;
+
+}
+
+
+.ejobs-empty-text {
+
+    max-width: 520px;
+
+    margin: 0 auto 26px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+   /* CREATE BUTTON */
+
+.ejobs-create-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 21px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 18px
+        rgba(37, 99, 235, 0.18);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.ejobs-create-btn span {
+
+    font-size: 18px;
+
+    line-height: 1;
+
+}
+
+
+.ejobs-create-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(37, 99, 235, 0.24);
+
+}
+
+
+   /* LARGE TABLET */
+
+@media (max-width: 1100px) {
+
+    .ejobs-page {
+
+        padding-left: 0;
+
+        padding-right: 0;
+
+    }
+
+
+    .ejobs-list:has(.job-card-grid) {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+
+    }
+
+}
+
+
+   /* TABLET */
+
+@media (max-width: 900px) {
+
+    .ejobs-header {
+
+        padding: 22px;
+
+    }
+
+
+    .ejobs-header-content h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .ejobs-header-summary {
+
+        min-width: 175px;
+
+    }
+
+}
+
+
+   /* MOBILE */
+
+@media (max-width: 768px) {
+
+    .ejobs-page {
+
+        padding: 0 0 35px;
+
+    }
+
+
+    .ejobs-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 20px;
+
+        border-radius: 18px;
+
+        gap: 18px;
+
+    }
+
+
+    .ejobs-header-main {
+
+        gap: 13px;
+
+    }
+
+
+    .ejobs-header-icon {
+
+        width: 47px;
+
+        height: 47px;
+
+        border-radius: 14px;
+
+        font-size: 20px;
+
+    }
+
+
+    .ejobs-header-content h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .ejobs-header-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    .ejobs-header-summary {
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        min-width: 0;
+
+    }
+
+
+    .ejobs-list-header {
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .ejobs-list-heading h2 {
+
+        font-size: 18px;
+
+    }
+
+
+       /* Employer cards become single column */
+
+    .ejobs-list:has(.job-card-grid) {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+    }
+
+
+    .ejobs-list {
+
+        gap: 16px;
+
+    }
+
+
+       /* First toggle becomes part of the layout */
+
+    .ejobs-card-wrapper:first-child
+    .job-card:first-of-type
+    .job-view-toggle {
+
+        position: static;
+
+        margin-bottom: 10px;
+
+        align-self: flex-end;
+
+    }
+
+
+    .ejobs-card-wrapper
+    .job-view-toggle button {
+
+        height: 38px;
+
+        padding: 7px 11px;
+
+    }
+
+
+       /* Empty state */
+
+    .ejobs-empty {
+
+        padding: 55px 20px;
+
+        border-radius: 18px;
+
+    }
+
+}
+
+
+   /* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .ejobs-header {
+
+        padding: 17px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .ejobs-header-icon {
+
+        width: 43px;
+
+        height: 43px;
+
+        border-radius: 13px;
+
+        font-size: 18px;
+
+    }
+
+
+    .ejobs-header-content h1 {
+
+        font-size: 21px;
+
+    }
+
+
+    .ejobs-header-content p {
+
+        font-size: 12px;
+
+    }
+
+
+    .ejobs-summary-number {
+
+        width: 46px;
+
+        height: 46px;
+
+    }
+
+
+    .ejobs-card-wrapper:first-child
+    .job-card:first-of-type
+    .job-view-toggle {
+
+        width: fit-content;
+
+    }
+
+
+    .ejobs-card-wrapper
+    .job-view-toggle button {
+
+        height: 36px;
+
+        padding: 7px 10px;
+
+    }
+
+
+    .ejobs-card-wrapper
+    .job-view-toggle button span {
+
+        display: none;
+
+    }
+
+
+    .ejobs-empty {
+
+        padding: 45px 16px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .ejobs-empty-icon {
+
+        width: 68px;
+
+        height: 68px;
+
+        border-radius: 19px;
+
+        font-size: 31px;
+
+    }
+
+
+    .ejobs-empty-title {
+
+        font-size: 20px;
+
+    }
+
+
+    .ejobs-empty-text {
+
+        font-size: 13px;
+
+    }
+
+
+    .ejobs-create-btn {
+
+        width: 100%;
+
+    }
+
+}
+

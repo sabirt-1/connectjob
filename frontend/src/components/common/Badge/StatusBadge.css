@@ -1,0 +1,87 @@
+
+
+
+.status-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:110px;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:capitalize;
+
+}
+
+.status-badge.pending{
+
+    background:#fff8e5;
+
+    color:#b7791f;
+
+}
+
+.status-badge.reviewing{
+
+    background:#e8f0fe;
+
+    color:#1967d2;
+
+}
+
+.status-badge.shortlisted{
+
+    background:#e6ffed;
+
+    color:#1b873f;
+
+}
+
+.status-badge.rejected{
+
+    background:#ffecec;
+
+    color:#d93025;
+
+}
+
+.status-badge.hired{
+
+    background:#d7f5dd;
+
+    color:#157347;
+
+}
+
+.status-badge.active{
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+.status-badge.inactive{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+
+
+
+
+
+
+

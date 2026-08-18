@@ -1,0 +1,266 @@
+
+
+
+.rec-app {
+    margin-top: 15px;
+}
+
+
+.application-item {
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #eee;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px, 1.5fr)
+        minmax(100px, 1fr)
+        minmax(180px, 1.5fr)
+        auto;
+
+    align-items: center;
+
+    column-gap: 24px;
+
+    row-gap: 8px;
+
+    text-align: left;
+
+}
+
+
+.application-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+/* Job Title */
+
+.application-item h4 {
+
+    margin: 0;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    line-height: 1.4;
+
+}
+
+
+/* Candidate */
+
+.application-item h5 {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #555;
+
+    line-height: 1.4;
+
+}
+
+
+/* Company */
+
+.application-item p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #777;
+
+    line-height: 1.4;
+
+}
+
+
+/* Status */
+
+.application-item > :last-child {
+
+    justify-self: start;
+
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .application-item {
+
+        grid-template-columns:
+            minmax(160px, 1.5fr)
+            minmax(100px, 1fr)
+            auto;
+
+        column-gap: 18px;
+
+    }
+
+    .application-item p {
+
+        grid-column: 1 / 3;
+
+    }
+
+    .application-item > :last-child {
+
+        grid-column: 3;
+
+        grid-row: 1 / 3;
+
+        justify-self: end;
+
+        align-self: center;
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .application-item {
+
+        display: grid;
+
+        grid-template-columns: 1fr auto;
+
+        column-gap: 16px;
+
+        row-gap: 6px;
+
+        padding: 18px 0;
+
+        text-align: left;
+
+    }
+
+
+    .application-item h4 {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+        font-size: 16px;
+
+    }
+
+
+    .application-item h5 {
+
+        grid-column: 1;
+
+        grid-row: 2;
+
+        font-size: 14px;
+
+    }
+
+
+    .application-item p {
+
+        grid-column: 1;
+
+        grid-row: 3;
+
+        font-size: 14px;
+
+        margin: 0;
+
+    }
+
+
+    .application-item > :last-child {
+
+        grid-column: 2;
+
+        grid-row: 1 / 4;
+
+        justify-self: end;
+
+        align-self: center;
+
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 400px) {
+
+    .application-item {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 7px;
+
+    }
+
+
+    .application-item h4 {
+
+        grid-column: 1;
+
+        grid-row: auto;
+
+    }
+
+
+    .application-item h5 {
+
+        grid-column: 1;
+
+        grid-row: auto;
+
+    }
+
+
+    .application-item p {
+
+        grid-column: 1;
+
+        grid-row: auto;
+
+    }
+
+
+    .application-item > :last-child {
+
+        grid-column: 1;
+
+        grid-row: auto;
+
+        justify-self: start;
+
+        margin-top: 4px;
+
+    }
+
+}
+
+
+
+
+
+
+
+

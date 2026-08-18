@@ -1,0 +1,157 @@
+
+
+
+.user-table-container{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    overflow-x:auto;
+
+    margin-top:30px;
+
+}
+
+.user-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.user-table th{
+
+    text-align:left;
+
+    padding:18px;
+
+    border-bottom:2px solid #f1f1f1;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.user-table td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.user-table tr:hover{
+
+    background:#f8fbff;
+
+}
+
+
+/* Role Badge Styles */
+.role-badge{
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:capitalize;
+
+}
+
+.role-badge.admin{
+
+    background:#e74c3c;
+
+}
+
+.role-badge.employer{
+
+    background:#1967d2;
+
+}
+
+.role-badge.candidate{
+
+    background:#00b894;
+
+}
+
+
+
+/* Action button Style */
+.user-table button{
+
+    background:#1967d2;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.user-table button:hover{
+
+    background:#0f4ca8;
+
+}
+
+
+
+.status-active{
+
+    background:#eafaf1;
+
+    color:#00a854;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.status-blocked{
+
+    background:#fdecec;
+
+    color:#e74c3c;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+/* UserRow Css */
+.view-btn{
+
+    background:#1967d2;
+
+}
+
+
+

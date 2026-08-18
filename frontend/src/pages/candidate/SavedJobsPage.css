@@ -1,0 +1,469 @@
+
+
+
+.saved-page{
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+    min-height:80vh;
+
+}
+
+/* Header */
+
+.saved-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    padding:30px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.06);
+
+}
+
+.saved-header h1{
+
+    margin:0;
+
+    font-size:34px;
+
+    color:#202124;
+
+}
+
+.saved-header p{
+
+    margin-top:8px;
+
+    color:#6b7280;
+
+    font-size:16px;
+
+}
+
+/* List */
+
+.saved-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* Card */
+
+.saved-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.saved-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+/* Logo */
+
+.saved-logo{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#1967d2,#4f8cff);
+
+    box-shadow:0 10px 25px rgba(25,103,210,.25);
+
+}
+
+.saved-left{
+
+    flex-shrink:0;
+
+}
+
+/* Content */
+
+.saved-center{
+
+    flex:1;
+
+}
+
+.job-link{
+
+    text-decoration:none;
+
+}
+
+.job-link h2{
+
+    margin:0;
+
+    color:#202124;
+
+    font-size:23px;
+
+    transition:.25s;
+
+}
+
+.job-link:hover h2{
+
+    color:#1967d2;
+
+}
+
+.company-name{
+
+    margin:10px 0;
+
+    color:#666;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+/* Meta */
+
+.saved-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+.saved-meta span{
+
+    background:#f8fafc;
+
+    border:1px solid #edf1f5;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    color:#555;
+
+    font-weight:500;
+
+}
+
+/* Right */
+
+.saved-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    min-width:170px;
+
+}
+
+.apply-btn{
+
+    text-decoration:none;
+
+    background:#1967d2;
+
+    color:#fff;
+
+    padding:13px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.apply-btn:hover{
+
+    background:#0f52ba;
+
+}
+
+.remove-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    padding:13px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.remove-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* Empty */
+
+.saved-empty{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:80px 40px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+.empty-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:#eef4ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+}
+
+.saved-empty h2{
+
+    margin-bottom:12px;
+
+    color:#202124;
+
+}
+
+.saved-empty p{
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+.browse-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#1967d2;
+
+    color:#fff;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.browse-btn:hover{
+
+    background:#0f52ba;
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .saved-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+    .saved-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .saved-right{
+
+        width:100%;
+
+        flex-direction:row;
+
+    }
+
+    .apply-btn,
+
+    .remove-btn{
+
+        flex:1;
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .saved-page{
+
+        padding:15px;
+
+    }
+
+    .saved-header{
+
+        padding:20px;
+
+    }
+
+    .saved-header h1{
+
+        font-size:28px;
+
+    }
+
+    .saved-card{
+
+        padding:20px;
+
+    }
+
+    .saved-logo{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:24px;
+
+    }
+
+    .job-link h2{
+
+        font-size:20px;
+
+    }
+
+    .saved-meta{
+
+        gap:8px;
+
+    }
+
+    .saved-meta span{
+
+        font-size:12px;
+
+        padding:7px 12px;
+
+    }
+
+    .saved-right{
+
+        flex-direction:column;
+
+    }
+
+}
+
+
+
+
+

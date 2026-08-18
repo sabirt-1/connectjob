@@ -1,0 +1,202 @@
+
+
+
+/* Job Portal Frontend Design */
+
+
+.hero {
+
+    /* min-height: 85vh; */
+    /* min-height: 70vh; */
+    /* min-height: 60vh; */
+    min-height:82vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    /* padding: 80px; */
+    /* padding: 50px 80px; */
+    padding:70px 70px;
+
+    background: #f5f7fc;
+    overflow:hidden;
+}
+
+.hero-left {
+
+    /* width: 50%; */
+    /* width: 55%; */
+    flex: 1;
+    /* max-width: 650px; */
+    max-width:620px;
+}
+
+/* .hero-left h1 {
+
+    font-size: 70px;
+
+    line-height: 1.2;
+
+    color: #202124;
+} */
+ /* 2. */
+.hero-left h1 {
+
+    /* font-size: 58px; */
+    /* font-size: 48px; */
+    /* font-size: 64px; */
+    font-size:56px;
+    max-width: 700px;
+
+    line-height: 1.15;
+    letter-spacing:-1px;
+
+    font-weight: 700;
+    color:#202124;
+
+    margin-bottom:18px;
+}
+ /* 3. */
+ /* .hero-left h1 {
+
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    max-width: 600px;
+} */
+
+.hero-left span {
+
+    /* color: #1967d2; */
+    color:var(--primary);
+
+    margin-left:10px;
+}
+
+.hero-left p {
+
+    /* margin-top: 20px;
+    margin-bottom: 40px; */
+
+    /* color: #666; */
+    /* color:var(--text-light); */
+    color:#6b7280;
+
+    line-height:1.8;
+
+    margin-bottom:42px;
+
+    font-size: 18px;
+}
+
+.hero-search {
+
+    display: flex;
+    align-items:center;
+
+    /* background: white; */
+    background:var(--white);
+
+    /* padding: 15px; */
+    padding:10px;
+
+    /* border-radius: 15px; */
+    border-radius:18px;
+    border:1px solid #edf0f5;
+
+    /* box-shadow: 0 5px 20px rgba(0,0,0,.08); */
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+
+    /* gap: 10px; */
+    gap:8px;
+}
+
+.hero-search input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    /* padding: 15px; */
+     padding:16px 18px;
+
+    font-size:15px;
+
+    background:transparent;
+}
+
+.hero-search button {
+
+    /* background: #1967d2; */
+    background:var(--primary);
+
+    color: white;
+
+    border: none;
+
+    /* padding: 15px 30px; */
+    padding:16px 30px;
+
+    border-radius:12px;
+    /* border-radius: 10px; */
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor: pointer;
+    transition:.25s;
+}
+.hero-search button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(25,103,210,.25);
+
+}
+
+.hero-right {
+
+    /* width: 45%; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.hero-right img {
+
+    /* width: 100%; */
+    /* width: 60%; */
+    /* width: 85%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+
+    border-radius: 20px; */
+    width:100%;
+
+    max-width:560px;
+
+    border-radius:24px;
+
+    object-fit:cover;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+
+
+
+.employer-job-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+    margin-bottom:20px;
+
+}
+
+.job-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.job-top span{
+
+    background:#eef4ff;
+
+    color:#1967d2;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+}
+
+.job-middle{
+
+    margin:20px 0;
+
+}
+
+.job-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.job-bottom button{
+
+    margin-left:10px;
+
+    border:none;
+
+    background:#1967d2;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+

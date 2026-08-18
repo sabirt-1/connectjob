@@ -1,0 +1,47 @@
+
+
+
+.skills-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.skill-chip{
+
+    padding:12px 22px;
+
+    background:#eef4ff;
+
+    color:#1967d2;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.skill-chip:hover{
+
+    background:#1967d2;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(25,103,210,.18);
+
+}
+

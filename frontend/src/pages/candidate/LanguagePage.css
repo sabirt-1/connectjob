@@ -1,0 +1,29 @@
+
+
+
+.add-language-btn{
+
+    background:#1967d2;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin-bottom:30px;
+
+    font-size:16px;
+
+}
+
+.add-language-btn:hover{
+
+    background:#1557b0;
+
+}
+

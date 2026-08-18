@@ -1,0 +1,85 @@
+
+
+
+:root{
+
+    /* Brand Colors */
+
+    --primary:#1967d2;
+    --primary-dark:#1557b0;
+
+    --secondary:#34a853;
+
+    --warning:#fbbc05;
+
+    --danger:#ea4335;
+
+    /* Neutral Colors */
+
+    --white:#ffffff;
+
+    --background:#f5f7fc;
+
+    --text:#202124;
+
+    --text-light:#696969;
+
+    --border:#e6e8ec;
+
+    /* Shadows */
+
+    --shadow-sm:0 2px 8px rgba(0,0,0,.05);
+
+    --shadow-md:0 8px 25px rgba(0,0,0,.08);
+
+    --shadow-lg:0 15px 35px rgba(0,0,0,.12);
+
+    /* Border Radius */
+
+    --radius-sm:8px;
+
+    --radius-md:16px;
+
+    --radius-lg:24px;
+
+    /* Layout */
+
+    --container:1280px;
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+}
+
+
+/* :root{
+
+    --primary:#1967d2;
+
+    --primary-dark:#1255b0;
+
+    --secondary:#34a853;
+
+    --warning:#fbbc05;
+
+    --danger:#ea4335;
+
+    --background:#f5f7fc;
+
+    --white:#ffffff;
+
+    --text:#202124;
+
+    --text-light:#666666;
+
+    --border:#e6e8ec;
+
+    --shadow:
+
+        0 8px 25px rgba(0,0,0,.08);
+
+    --radius:16px;
+
+} */
+

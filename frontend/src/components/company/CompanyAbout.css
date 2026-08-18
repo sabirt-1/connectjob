@@ -1,0 +1,33 @@
+
+
+
+.company-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    margin-bottom:30px;
+
+}
+
+.company-card h2{
+
+    color:#202124;
+
+    margin-bottom:20px;
+
+}
+
+.company-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+

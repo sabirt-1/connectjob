@@ -1,0 +1,243 @@
+
+
+
+.filter-sidebar{
+
+    width:280px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:90px;
+
+    /* height:fit-content; */
+    max-height:85vh;
+
+    overflow-y:auto;
+
+}
+
+.filter-sidebar h2{
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    color:#1d4ed8;
+
+}
+
+.filter-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+
+}
+
+.filter-group label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+.filter-group input,
+
+.filter-group select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.25s;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+.filter-group input:focus,
+
+.filter-group select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+.salary-value{
+
+    margin-top:8px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:#2563eb;
+
+}
+
+.search-btn{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    margin-top:10px;
+
+}
+
+.search-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+.clear-btn{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.clear-btn:hover{
+
+    background:#dc2626;
+
+}
+
+
+@media (max-width:992px){
+
+    .filter-sidebar{
+
+        width:240px;
+
+        padding:20px;
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .filter-sidebar{
+
+        width:100%;
+
+        position:static;
+
+        margin-bottom:20px;
+
+        max-height:none;
+
+        overflow:visible;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .filter-sidebar{
+
+        padding:18px;
+
+        border-radius:12px;
+
+    }
+
+    .filter-group label{
+
+        font-size:14px;
+
+    }
+
+    .filter-group input,
+
+    .filter-group select{
+
+        padding:10px;
+
+        font-size:14px;
+
+    }
+
+    .search-btn,
+
+    .clear-btn{
+
+        padding:10px;
+
+        font-size:14px;
+
+    }
+
+}
+
+
+
+
+
+
+
+

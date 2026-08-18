@@ -1,0 +1,98 @@
+
+
+
+.apply-page {
+    min-height: 100vh;
+    background: #f4f7fc;
+    padding: 50px 20px;
+}
+
+.apply-container {
+    max-width: 720px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.apply-container h1 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #1f2937;
+    text-align: center;
+}
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    min-height: 170px;
+    resize: vertical;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+    transition: .3s;
+}
+
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37,99,235,.15);
+}
+
+.ja-resume-upload {
+    border: 2px dashed #2563eb;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    background: #f8fbff;
+}
+
+.ja-resume-upload input {
+    margin-top: 15px;
+}
+
+.file-name {
+    margin-top: 10px;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.ja-submit-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ja-submit-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.ja-submit-btn:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+

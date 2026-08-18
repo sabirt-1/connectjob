@@ -1,0 +1,196 @@
+
+
+
+.experience-form{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+
+}
+
+.experience-form h2{
+
+    margin-bottom:25px;
+
+}
+
+.experience-form input,
+
+.experience-form select,
+
+.experience-form textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.experience-form input:focus,
+
+.experience-form select:focus,
+
+.experience-form textarea:focus{
+
+    outline:none;
+
+    border-color:#1967d2;
+
+    box-shadow:0 0 0 3px rgba(25,103,210,.12);
+
+}
+
+.experience-form textarea{
+
+    resize:vertical;
+
+    min-height:140px;
+
+}
+
+.experience-form label{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+.checkbox-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.checkbox-row input{
+
+    width:auto;
+
+    margin:0;
+
+}
+
+.ai-improve-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#7c3aed;
+
+    color:#fff;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-bottom:20px;
+
+}
+
+.ai-improve-btn:hover{
+
+    background:#6d28d9;
+
+}
+
+.ai-improve-btn:disabled{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+}
+
+.form-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.form-buttons button{
+
+    flex:1;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.form-buttons button:first-child{
+
+    background:#1967d2;
+
+    color:#fff;
+
+}
+
+.form-buttons button:first-child:hover{
+
+    background:#1557b0;
+
+}
+
+.form-buttons button:last-child{
+
+    background:#e5e7eb;
+
+    color:#111827;
+
+}
+
+.form-buttons button:last-child:hover{
+
+    background:#d1d5db;
+
+}
+
+
+
+

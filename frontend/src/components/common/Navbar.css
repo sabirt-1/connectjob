@@ -1,0 +1,373 @@
+
+
+
+/* Job Portal Frontend Design */
+.navbar {
+
+    /* height: 90px; */
+    height:76px;
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    /* padding: 0 60px; */
+    padding:0 42px;
+
+    /* background: white; */
+    /* background:var(--white); */
+    background: rgba(255,255,255,.92);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    /* border-bottom: 1px solid #eee; */
+    border-bottom:1px solid #edf0f5;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.03);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.nav-left {
+
+    display: flex;
+
+    align-items: center;
+
+    /* gap: 50px; */
+    gap: 36px;
+
+}
+
+.logo {
+
+    /* font-size: 34px; */
+    font-size:28px;
+
+    font-weight: 700;
+
+    letter-spacing:-0.5px;
+
+    color:var(--primary);
+    transition:.25s;
+
+    /* color: #1967d2; */
+    /* background:var(--primary); */
+}
+.logo:hover{
+
+    opacity:.85;
+
+}
+
+.nav-menu {
+
+    display: flex;
+
+    /* gap: 30px; */
+    gap:26px;
+}
+
+.nav-menu a {
+
+    /* font-size: 16px; */
+    font-size: 15px;
+
+    font-weight: 500;
+
+    /* color: #202124; */
+    /* color:#555; */
+    color:#5f6368;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+    position:relative;
+}
+
+.nav-menu a:hover{
+
+    color:var(--primary);
+
+}
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.25s;
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.upload-btn {
+
+    background: transparent;
+
+    border: none;
+
+    color: #1967d2;
+    /* background:var(--primary); */
+
+    cursor: pointer;
+
+    font-size: 15px;
+    padding:10px 16px;
+
+    /* border-radius:10px; */
+    border-radius: 12px;
+
+    transition:.25s;
+}
+.upload-btn:hover{
+
+    background:#eef4ff;
+
+}
+
+.login-btn {
+
+    background: #eef3fc;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    /* border-radius: 10px; */
+    border-radius: 12px;
+
+    /* color: #1967d2; */
+    background:var(--primary);
+
+    cursor: pointer;
+}
+
+.job-btn {
+
+    /* background: #1967d2; */
+    background:var(--primary);
+
+    color: white;
+
+    border: none;
+
+    /* padding: 12px 25px; */
+    padding: 10px 20px;
+
+    /* border-radius: 10px; */
+    border-radius: 12px;
+
+    cursor: pointer;
+    font-size:14px;
+
+    font-weight:500;
+}
+
+.auth-btn,
+.job-btn{
+
+    transition:
+        background .25s,
+        transform .2s,
+        box-shadow .25s;
+
+}
+.auth-btn:hover,
+.job-btn:hover{
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(25,103,210,.18);
+
+}
+
+
+
+
+
+
+
+
+/* newest */
+.menu-toggle {
+
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+/* Overlay */
+
+.overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.5);
+
+    z-index: 1999;
+}
+
+/* Sidebar */
+
+.mobile-sidebar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 280px;
+
+    height: 100vh;
+
+    /* background: white; */
+    background:var(--white);
+
+    z-index: 2000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    /* padding: 20px; */
+    padding: 28px;
+
+    /* gap: 20px; */
+    gap: 18px;
+
+    overflow-y: auto;
+}
+
+.sidebar-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.sidebar-header button {
+
+    border: none;
+
+    background: none;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.mobile-sidebar a {
+
+    color: #202124;
+
+    font-size: 17px;
+
+    text-decoration: none;
+}
+
+
+
+
+
+/* /responsive */
+@media (max-width: 992px) {
+
+    .nav-menu {
+
+        display: none;
+    }
+
+    .upload-btn {
+
+        display: none;
+    }
+
+    .job-btn {
+
+        display: none;
+    }
+
+    .menu-toggle {
+
+        display: block;
+    }
+
+    .navbar {
+
+        padding: 0 20px;
+    }
+
+}
+
+.auth-btn {
+
+    background: #eef3fc;
+
+    color: #1967d2;
+
+    border: none;
+
+    /* padding: 12px 24px; */
+    padding:10px 20px;
+
+    /* border-radius: 10px; */
+    border-radius: 12px;
+
+    cursor: pointer;
+    font-size:14px;
+
+    font-weight: 600;
+}
+.auth-btn:hover {
+    /* background: #1967d2; */
+    background:var(--primary);
+    color: #eef3fc;
+}
+

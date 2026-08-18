@@ -1,0 +1,221 @@
+
+
+
+.company-form-container {
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+}
+
+.company-form-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.company-form-card h1 {
+
+    margin-bottom: 35px;
+
+    color: #1967d2;
+
+    text-align: center;
+
+    font-size: 2rem;
+
+}
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 25px;
+
+}
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.form-group label {
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #444;
+
+}
+
+.form-group input,
+
+.form-group textarea {
+
+    padding: 14px;
+
+    border: 1px solid #d8dbe2;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .25s;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus {
+
+    border-color: #1967d2;
+
+    box-shadow: 0 0 0 4px rgba(25,103,210,.12);
+
+}
+
+.full-width {
+
+    grid-column: 1 / -1;
+
+    margin-top: 25px;
+
+}
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 150px;
+
+}
+
+.company-submit-btn {
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #1967d2;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.company-submit-btn:hover {
+
+    background: #1254ad;
+
+    transform: translateY(-2px);
+
+}
+
+
+.logo-upload{
+
+    margin-bottom:35px;
+
+    text-align:center;
+
+}
+
+.logo-upload label{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.logo-preview{
+
+    width:170px;
+
+    height:170px;
+
+    margin:0 auto 20px;
+
+    border:2px dashed #d7d7d7;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fafafa;
+
+}
+
+.logo-preview img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.logo-upload input{
+
+    cursor:pointer;
+
+}
+
+
+
+
+@media(max-width:768px){
+
+    .company-form-card{
+
+        padding:25px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+

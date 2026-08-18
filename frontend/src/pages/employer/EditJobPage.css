@@ -1,0 +1,330 @@
+
+
+
+   /* EDIT JOB PAGE */
+
+.edit-job-page {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    padding: 40px 20px 60px;
+
+    box-sizing: border-box;
+
+    background: #f6f8fc;
+}
+
+
+   /* MAIN CARD */
+
+.edit-job-card {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07),
+        0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+   /* HEADER */
+
+.edit-job-header {
+    margin-bottom: 32px;
+
+    text-align: center;
+}
+
+.edit-job-header h1 {
+    margin: 0 0 8px;
+
+    color: #202124;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+.edit-job-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+   /* FORM */
+
+.edit-job-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+   /* INPUTS / SELECT / TEXTAREA */
+
+.edit-job-form input,
+.edit-job-form textarea,
+.edit-job-form select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d9dce3;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #202124;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+   /* INPUT FOCUS */
+
+.edit-job-form input:focus,
+.edit-job-form textarea:focus,
+.edit-job-form select:focus {
+    border-color: #1967d2;
+
+    box-shadow:
+        0 0 0 4px rgba(25, 103, 210, 0.10);
+
+    background: #ffffff;
+}
+
+
+   /* PLACEHOLDER */
+
+.edit-job-form input::placeholder,
+.edit-job-form textarea::placeholder {
+    color: #9aa0a6;
+
+    opacity: 1;
+}
+
+
+   /* TEXTAREA */
+
+.edit-job-form textarea {
+    min-height: 180px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+   /* SELECT */
+
+.edit-job-form select {
+    cursor: pointer;
+
+    appearance: auto;
+}
+
+
+   /* NUMBER INPUT */
+
+.edit-job-form input[type="number"] {
+    appearance: textfield;
+}
+
+
+/* Chrome / Edge / Safari */
+
+.edit-job-form input[type="number"]::-webkit-inner-spin-button,
+.edit-job-form input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+}
+
+
+   /* UPDATE BUTTON */
+
+.edit-job-form button {
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 15px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1967d2;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+}
+
+.edit-job-form button:hover {
+    background: #1557b0;
+
+    box-shadow:
+        0 6px 16px rgba(25, 103, 210, 0.22);
+}
+
+.edit-job-form button:active {
+    transform: translateY(1px);
+
+    box-shadow: none;
+}
+
+.edit-job-form button:focus-visible {
+    outline: 3px solid rgba(25, 103, 210, 0.25);
+
+    outline-offset: 2px;
+}
+
+
+   /* RESPONSIVE - TABLET */
+
+@media (max-width: 768px) {
+
+    .edit-job-page {
+        padding: 25px 16px 40px;
+    }
+
+    .edit-job-card {
+        padding: 30px 24px;
+
+        border-radius: 16px;
+    }
+
+    .edit-job-header {
+        margin-bottom: 26px;
+    }
+
+    .edit-job-header h1 {
+        font-size: 26px;
+    }
+
+    .edit-job-form {
+        gap: 15px;
+    }
+
+}
+
+
+   /* RESPONSIVE - MOBILE */
+
+@media (max-width: 480px) {
+
+    .edit-job-page {
+        padding: 15px 10px 30px;
+    }
+
+    .edit-job-card {
+        padding: 24px 16px;
+
+        border-radius: 14px;
+
+        box-shadow:
+            0 5px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .edit-job-header {
+        text-align: left;
+
+        margin-bottom: 22px;
+    }
+
+    .edit-job-header h1 {
+        font-size: 23px;
+    }
+
+    .edit-job-header p {
+        font-size: 14px;
+    }
+
+    .edit-job-form {
+        gap: 14px;
+    }
+
+    .edit-job-form input,
+    .edit-job-form textarea,
+    .edit-job-form select {
+        padding: 13px 14px;
+
+        font-size: 14px;
+
+        border-radius: 9px;
+    }
+
+    .edit-job-form textarea {
+        min-height: 150px;
+    }
+
+    .edit-job-form button {
+        padding: 14px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+   /* VERY SMALL SCREENS */
+
+@media (max-width: 350px) {
+
+    .edit-job-page {
+        padding: 10px 7px 25px;
+    }
+
+    .edit-job-card {
+        padding: 20px 13px;
+    }
+
+    .edit-job-header h1 {
+        font-size: 21px;
+    }
+
+}
+

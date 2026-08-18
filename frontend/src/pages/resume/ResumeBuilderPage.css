@@ -1,0 +1,249 @@
+
+
+
+.resume-builder-page{
+
+    width:100%;
+
+}
+
+/* ==========================
+   Template Selector
+========================== */
+
+.resume-builder-header{
+
+    margin-bottom:30px;
+
+}
+
+.resume-builder-header h1{
+
+    margin:0;
+
+    font-size:32px;
+
+    color:#222;
+
+}
+
+.resume-builder-header p{
+
+    margin-top:8px;
+
+    color:#666;
+
+}
+
+/* ==========================
+   Actions
+========================== */
+
+.resume-builder-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin:30px 0;
+
+}
+
+.resume-builder-actions button{
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px 24px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.resume-builder-actions button:first-child{
+
+    background:#1967d2;
+
+    color:#fff;
+
+}
+
+.resume-builder-actions button:first-child:hover{
+
+    background:#1557b0;
+
+}
+
+.resume-builder-actions button:last-child{
+
+    background:#10b981;
+
+    color:#fff;
+
+}
+
+.resume-builder-actions button:last-child:hover{
+
+    background:#0f9b6d;
+
+}
+
+/* ==========================
+   Resume Preview
+========================== */
+
+.resume-preview-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:40px;
+
+    background:#eef2f7;
+
+    border-radius:18px;
+
+    min-height:700px;
+
+    overflow-x:auto;
+
+}
+
+/* Make all templates centered */
+
+.resume-preview-wrapper > *{
+
+    flex-shrink:0;
+
+}
+
+/* ==========================
+   Empty State
+========================== */
+
+.resume-empty{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    color:#666;
+
+}
+
+.resume-empty h2{
+
+    margin-bottom:12px;
+
+    color:#333;
+
+}
+
+.resume-empty p{
+
+    max-width:500px;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:992px){
+
+    .resume-builder-actions{
+
+        justify-content:center;
+
+    }
+
+    .resume-preview-wrapper{
+
+        padding:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .resume-builder-actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .resume-builder-actions button{
+
+        width:100%;
+
+    }
+
+    .resume-preview-wrapper{
+
+        padding:15px;
+
+        border-radius:12px;
+
+    }
+
+}
+
+/* ==========================
+   Print
+========================== */
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .resume-builder-actions,
+
+    .template-selector{
+
+        display:none !important;
+
+    }
+
+    .resume-preview-wrapper{
+
+        background:#fff;
+
+        padding:0;
+
+        min-height:auto;
+
+        overflow:visible;
+
+    }
+
+}
+

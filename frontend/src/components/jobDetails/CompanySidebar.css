@@ -1,0 +1,251 @@
+
+
+
+.company-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.company-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+
+}
+
+.apply-card{
+
+    padding:25px;
+
+}
+
+.company-apply-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#1967d2;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.company-apply-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(25,103,210,.25);
+
+}
+
+.sidebar-title{
+
+    text-align:center;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    color:#202124;
+
+}
+
+.company-logo{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:22px;
+
+    background:linear-gradient(135deg,#1967d2,#4d8dff);
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+.company-card h2{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#202124;
+
+}
+
+.company-type{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    margin-top:6px;
+
+    margin-bottom:25px;
+
+}
+
+.company-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.company-info div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    color:#5f6368;
+
+    font-size:15px;
+
+}
+
+.company-info svg{
+
+    color:#1967d2;
+
+    min-width:18px;
+
+}
+
+.outline-btn{
+
+    width:100%;
+
+    border:2px solid #1967d2;
+
+    background:white;
+
+    color:#1967d2;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.outline-btn:hover{
+
+    background:#1967d2;
+
+    color:#fff;
+
+}
+
+.recruiter-avatar{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    background:#eef4ff;
+
+    color:#1967d2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:24px;
+
+}
+
+.contact-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#202124;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+    background:#1967d2;
+
+}
+

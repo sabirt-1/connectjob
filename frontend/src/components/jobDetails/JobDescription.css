@@ -1,0 +1,23 @@
+
+
+
+.job-section-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.05);
+    margin-bottom: 24px;
+}
+
+.job-section-card h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #1f2937;
+}
+
+.job-section-card p {
+    line-height: 1.9;
+    color: #555;
+    font-size: 16px;
+}
+

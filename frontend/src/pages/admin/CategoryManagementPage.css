@@ -1,0 +1,35 @@
+
+
+
+.category-search{
+
+    margin:25px 0;
+
+}
+
+.category-search input{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    outline:none;
+
+}
+
+.category-search input:focus{
+
+    border-color:#1967d2;
+
+    box-shadow:0 0 0 3px rgba(25,103,210,.15);
+
+}
+

@@ -1,0 +1,139 @@
+
+
+
+.verify-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f7fb, #eef3ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.verify-card {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 45px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.verify-card h2 {
+    color: #0A66C2;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.verify-card p {
+    color: #666;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.verify-card strong {
+    display: block;
+    margin-bottom: 25px;
+    color: #111;
+    font-size: 17px;
+    word-break: break-word;
+}
+
+.verify-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.verify-card input {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 8px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    outline: none;
+    transition: .3s;
+}
+
+.verify-card input:focus {
+    border-color: #0A66C2;
+    box-shadow: 0 0 0 4px rgba(10,102,194,.15);
+}
+
+.verify-card button {
+    background: #0A66C2;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.verify-card button:hover {
+    background: #004182;
+}
+
+.verify-card button:disabled {
+    background: #8fb7e3;
+    cursor: not-allowed;
+}
+
+.verify-error {
+    margin: 15px 0;
+    background: #ffe9e9;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.timer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 15px;
+}
+
+.resend-btn {
+    margin-top: 20px;
+    background: transparent !important;
+    color: #0A66C2 !important;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.resend-btn:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:600px){
+
+    .verify-card{
+
+        padding:30px 22px;
+
+    }
+
+    .verify-card h2{
+
+        font-size:26px;
+
+    }
+
+    .verify-card input{
+
+        letter-spacing:5px;
+
+        font-size:17px;
+
+    }
+
+}
+

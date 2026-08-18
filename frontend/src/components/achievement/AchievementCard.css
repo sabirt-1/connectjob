@@ -1,0 +1,209 @@
+
+
+
+.achievement-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    margin-bottom:24px;
+
+    box-shadow:0 6px 24px rgba(0,0,0,.08);
+
+    border:1px solid #eef2f7;
+
+    transition:all .3s ease;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.achievement-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+}
+
+.achievement-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#1967d2;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+}
+
+.achievement-header h3{
+
+    margin:0;
+
+    color:#222;
+
+    font-size:20px;
+
+}
+
+.achievement-header p{
+
+    margin-top:6px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.achievement-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:12px 0;
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+.achievement-description{
+
+    margin:18px 0;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+.achievement-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:24px;
+
+}
+
+.edit-btn,
+
+.delete-btn{
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.edit-btn{
+
+    background:#1967d2;
+
+    color:#fff;
+
+}
+
+.edit-btn:hover{
+
+    background:#1557b0;
+
+}
+
+.delete-btn{
+
+    background:#dc3545;
+
+    color:#fff;
+
+}
+
+.delete-btn:hover{
+
+    background:#bb2d3b;
+
+}
+
+@media (max-width:768px){
+
+    .achievement-card{
+
+        padding:18px;
+
+    }
+
+    .achievement-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .achievement-actions{
+
+        flex-direction:column;
+
+    }
+
+    .edit-btn,
+
+    .delete-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+

@@ -1,0 +1,543 @@
+
+
+
+.category-table-card {
+
+    background: white;
+
+    margin-top: 35px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .06);
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+}
+
+
+.category-table-card h2 {
+
+    color: #1967d2;
+
+    margin: 0 0 20px;
+
+    font-size: 24px;
+
+}
+
+
+/* TABLE WRAPPER BEHAVIOR */
+
+.category-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 760px;
+
+}
+
+
+/* TABLE HEADER */
+
+.category-table th {
+
+    background: #f7f8fb;
+
+    text-align: left;
+
+    padding: 16px;
+
+    border-bottom: 2px solid #ddd;
+
+    white-space: nowrap;
+
+    color: #374151;
+
+    font-size: 14px;
+
+}
+
+
+/* LAST COLUMN */
+
+.category-table th:last-child,
+.category-table td:last-child {
+
+    text-align: center;
+
+}
+
+
+/* TABLE CELLS */
+
+.category-table td {
+
+    padding: 16px;
+
+    border-bottom: 1px solid #eee;
+
+    vertical-align: middle;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+}
+
+
+/* STATUS */
+
+.status {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+.active {
+
+    background: #00b894;
+
+}
+
+
+.inactive {
+
+    background: #e74c3c;
+
+}
+
+
+/* ACTION BUTTONS */
+
+.act-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: nowrap;
+
+}
+
+
+.cat-edit-btn,
+.cat-delete-btn {
+
+    width: 90px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.cat-edit-btn {
+
+    background: #1967d2;
+
+    color: #fff;
+
+}
+
+
+.cat-edit-btn:hover {
+
+    background: #1455b0;
+
+}
+
+
+.cat-delete-btn {
+
+    background: #e74c3c;
+
+    color: #fff;
+
+}
+
+
+.cat-delete-btn:hover {
+
+    background: #c0392b;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .category-table-card {
+
+        padding: 24px;
+
+        margin-top: 28px;
+
+    }
+
+
+    /*
+       Allow the table to scroll horizontally
+       instead of breaking the layout.
+    */
+
+    .category-table-card {
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+
+    }
+
+
+    .category-table {
+
+        min-width: 720px;
+
+    }
+
+
+    .category-table th,
+    .category-table td {
+
+        padding: 13px 12px;
+
+    }
+
+
+    .category-table-card h2 {
+
+        font-size: 22px;
+
+    }
+
+}
+
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .category-table-card {
+
+        margin-top: 22px;
+
+        padding: 18px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .category-table-card h2 {
+
+        font-size: 20px;
+
+        margin-bottom: 16px;
+
+    }
+
+
+    .category-table {
+
+        min-width: 680px;
+
+    }
+
+
+    .category-table th {
+
+        padding: 12px 10px;
+
+        font-size: 13px;
+
+    }
+
+
+    .category-table td {
+
+        padding: 12px 10px;
+
+        font-size: 13px;
+
+    }
+
+
+    .cat-edit-btn,
+    .cat-delete-btn {
+
+        width: 78px;
+
+        height: 36px;
+
+        font-size: 12px;
+
+        border-radius: 7px;
+
+    }
+
+
+    .act-buttons {
+
+        gap: 7px;
+
+    }
+
+
+    .status {
+
+        padding: 5px 11px;
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .category-table-card {
+
+        padding: 14px;
+
+        border-radius: 13px;
+
+    }
+
+
+    .category-table-card h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .category-table {
+
+        min-width: 640px;
+
+    }
+
+
+    .category-table th,
+    .category-table td {
+
+        padding: 10px 8px;
+
+    }
+
+
+    .cat-edit-btn,
+    .cat-delete-btn {
+
+        width: 70px;
+
+        height: 34px;
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+
+
+
+
+
+/* 
+.category-table-card{
+
+    background:white;
+
+    margin-top:35px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.category-table-card h2{
+
+    color:#1967d2;
+
+    margin-bottom:20px;
+
+}
+
+.category-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.category-table th{
+
+    background:#f7f8fb;
+
+    text-align:left;
+
+    padding:16px;
+
+    border-bottom:2px solid #ddd;
+
+}
+
+.category-table th:last-child,
+.category-table td:last-child{
+
+    text-align:center;
+
+}
+
+.category-table td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+    vertical-align:middle;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.active{
+
+    background:#00b894;
+
+}
+
+.inactive{
+
+    background:#e74c3c;
+
+}
+
+.act-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.cat-edit-btn,
+.cat-delete-btn{
+
+    width:90px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.cat-edit-btn{
+
+    background:#1967d2;
+
+    color:#fff;
+
+}
+
+.cat-edit-btn:hover{
+
+    background:#1455b0;
+
+}
+
+.cat-delete-btn{
+
+    background:#e74c3c;
+
+    color:#fff;
+
+}
+
+.cat-delete-btn:hover{
+
+    background:#c0392b;
+
+}
+ */

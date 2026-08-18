@@ -1,0 +1,41 @@
+
+
+
+.admin-activity-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+.admin-activity-card h3{
+
+    margin-bottom:20px;
+
+    color:#1967d2;
+
+}
+
+.admin-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.admin-item:last-child{
+
+    border:none;
+
+}
+

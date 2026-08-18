@@ -1,0 +1,39 @@
+
+
+
+.container{
+
+    width:100%;
+
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+
+.section{
+
+    padding:80px 0;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.radius{
+
+    border-radius:var(--radius-md);
+
+}
+

@@ -1,0 +1,36 @@
+
+
+
+
+
+.footer {
+
+    background: #202124;
+
+    color: white;
+
+    padding: 80px;
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+.footer ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.footer li {
+
+    margin-bottom: 10px;
+
+    color: #ccc;
+}

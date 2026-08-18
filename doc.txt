@@ -1,0 +1,129 @@
+
+# admin
+# username: Jobconnect
+# password: Jobs@123
+# Jobs@123
+
+#Logins for candidate
+# current Candidate 
+#Atharva_pawar  atharvap@gmail.com  Atharva123
+
+# sabir : 123456
+
+# Atharva P  : 123456
+
+# Role: Employer : Username: employer999 : Email: employer999@gmail.com : Phone: 9999999999 : Password: 12345678
+
+#Logins for Employer
+
+# Username : Sabir-Tech , eamil : sabirtech@gmail.com, phone : 9876543210, password : 123456,
+
+
+
+# try for admin panel (for api testing purpose )
+python manage.py shell
+from accounts.models import User
+
+User.objects.create_user(
+
+    username="admin",
+
+    email="admin@gmail.com",
+
+    password="admin123",
+
+    role="admin"
+
+)
+exit()
+
+Username:
+admin
+
+Password:
+admin123
+#
+
+
+# CURRENT Logins
+
+# admin (jobconnect)
+USERNAME  EMAIL ADDRESS     ROLE    PASSWORD 
+
+1. admin  admin@gmail.com   Admin   admin123
+
+# admin (django admin)
+1. admin1  admin1@gmail.com         admin123
+
+
+# candidate 
+1. Atharva_Pawar    atharvap@gmail.com    	Candidate   Atharva123
+
+2. sabir            tsabir224@gmail.com     Candidate   sabir123
+
+# employer
+1. Atharva-Tech     AtharvaTech@gmail.com   Employer    Atharva123
+
+2. abcd-tech        abcd@gmail.com          Employer    abcd123
+
+3. pqr-tech    mohammedsabirtungekar24@gmail.com  Employer    pqr123
+
+
+
+
+joog mrus ljrp hisy
+
+api key:
+AQ.Ab8RN6KvAT0mNRA6gDUAsgQPsan_8R4RNVTOEtIEfIA_BwzfuA
+
+key:
+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
+
+python manage.py shell
+
+from accounts.models import User
+
+User.objects.create_user(
+    username="test",
+    email="tsabir224@gmail.com",
+    password="123456",
+    role="candidate"
+)
+    
+
+
+
+from accounts.models import User
+
+user = User.objects.get(username="admin")
+
+print(user.email_verified)
+
+
+
+
+from accounts.models import User
+
+admin = User.objects.get(username="admin")
+
+admin.email = "sabirt024@gmail.com"
+
+admin.email_verified = True
+
+admin.save()
+
+print(admin.email)
+
+print(admin.email_verified)
+
+
+from accounts.models import User
+
+u = User.objects.latest("id")
+
+print(u.username)
+print(u.email)
+print(u.is_active)
+print(u.check_password("sabir123"))
+print(u.email_verified)
+

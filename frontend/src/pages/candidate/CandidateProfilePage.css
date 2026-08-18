@@ -1,0 +1,54 @@
+
+
+
+
+ .save-section{
+
+position:sticky;
+
+bottom:20px;
+
+display:flex;
+
+justify-content:flex-end;
+
+padding:20px;
+
+}
+
+.cprof-save-btn{
+
+    background:#1967d2;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cprof-save-btn:hover{
+
+    background:#1557b0;
+
+}
+
+.cprof-save-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+

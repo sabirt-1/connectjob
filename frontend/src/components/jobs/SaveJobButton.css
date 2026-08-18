@@ -1,0 +1,116 @@
+
+
+
+.save-job-btn {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 15px;
+
+    background: #f5f7fb;
+
+    color: #202124;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .3s;
+
+}
+
+.save-job-btn:hover {
+
+    background: #202124;
+
+    color: white;
+
+}
+
+.save-job-btn.saved {
+
+    background: #1967d2;
+
+    color: white;
+
+}
+
+.save-job-btn:disabled {
+
+    opacity: .7;
+
+    cursor: not-allowed;
+
+}
+
+.save-job-btn.icon-only {
+
+    width: 42px;
+
+    height: 42px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.save-job-btn.icon-only:hover {
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+}
+
+
+.save-job-btn.icon-only.saved {
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border-color: #2563eb;
+
+}
+
+
+.save-job-btn.icon-only.saved:hover {
+
+    background: #1d4ed8;
+
+    color: #ffffff;
+
+}
+
+

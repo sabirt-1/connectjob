@@ -1,0 +1,343 @@
+
+
+
+.minimal-resume{
+
+    width:850px;
+
+    max-width:100%;
+
+    margin:40px auto;
+
+    background:#ffffff;
+
+    color:#222;
+
+    padding:56px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    font-family:-apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    line-height:1.75;
+
+}
+
+   /* Header */
+
+.minimal-header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    padding-bottom:28px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.minimal-header h1{
+
+    margin:0;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    letter-spacing:-1px;
+
+}
+
+.minimal-headline{
+
+    margin:14px 0;
+
+    font-size:20px;
+
+    color:#4b5563;
+
+    font-weight:400;
+
+}
+
+.minimal-contact{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:18px;
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+.minimal-contact span{
+
+    white-space:nowrap;
+
+}
+
+   /* Sections */
+
+.minimal-resume section{
+
+    margin-bottom:42px;
+
+}
+
+.minimal-resume section h2{
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:#6b7280;
+
+    margin-bottom:18px;
+
+    padding-bottom:8px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+   /* Resume Items */
+
+.minimal-item{
+
+    margin-bottom:28px;
+
+}
+
+.minimal-title-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    margin-bottom:10px;
+
+}
+
+.minimal-title-row h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#111827;
+
+}
+
+.minimal-title-row h4{
+
+    margin:6px 0 0;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    color:#6b7280;
+
+}
+
+.minimal-title-row span{
+
+    font-size:14px;
+
+    color:#9ca3af;
+
+    white-space:nowrap;
+
+}
+
+.minimal-item p{
+
+    margin:8px 0;
+
+    color:#4b5563;
+
+}
+
+   /* Skills */
+
+.minimal-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.skill-pill{
+
+    padding:8px 16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:999px;
+
+    background:#fafafa;
+
+    color:#374151;
+
+    font-size:14px;
+
+    transition:.25s;
+
+}
+
+.skill-pill:hover{
+
+    background:#111827;
+
+    color:#fff;
+
+    border-color:#111827;
+
+}
+
+   /* Languages */
+
+.minimal-languages{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.minimal-languages span{
+
+    color:#4b5563;
+
+    font-size:15px;
+
+}
+
+   /* Links */
+
+.minimal-resume a{
+
+    color:#111827;
+
+    text-decoration:none;
+
+}
+
+.minimal-resume a:hover{
+
+    text-decoration:underline;
+
+}
+
+   /* Responsive */
+
+@media(max-width:768px){
+
+    .minimal-resume{
+
+        padding:30px 22px;
+
+    }
+
+    .minimal-header h1{
+
+        font-size:32px;
+
+    }
+
+    .minimal-headline{
+
+        font-size:18px;
+
+    }
+
+    .minimal-title-row{
+
+        flex-direction:column;
+
+        gap:8px;
+
+    }
+
+    .minimal-contact{
+
+        flex-direction:column;
+
+        gap:8px;
+
+    }
+
+}
+
+   /* Print */
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .minimal-resume{
+
+        width:100%;
+
+        max-width:100%;
+
+        margin:0;
+
+        padding:28px;
+
+        box-shadow:none;
+
+        border-radius:0;
+
+    }
+
+    .minimal-item{
+
+        page-break-inside:avoid;
+
+    }
+
+    .minimal-resume section{
+
+        page-break-inside:avoid;
+
+    }
+
+}
+

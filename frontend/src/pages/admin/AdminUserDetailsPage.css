@@ -1,0 +1,191 @@
+
+
+
+.user-details-page {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.user-card {
+    /* margin: 40px auto; */
+    margin-top: 40px;
+    background: white;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #1967d2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.user-basic h2 {
+    margin: 0;
+}
+
+.user-basic p {
+    color: #666;
+    margin-top: 8px;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.role-admin {
+    background: #e74c3c;
+}
+
+.role-employer {
+    background: #1967d2;
+}
+
+.role-candidate {
+    background: #00b894;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.info-box {
+    background: #f8f9fb;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.info-box h4 {
+    margin-bottom: 10px;
+    color: #1967d2;
+}
+
+.section-title {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.about-box {
+    background: #f8f9fb;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.action-buttons button {
+    padding: 12px 26px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.edit-btn {
+    background: #1967d2;
+}
+
+.block-btn {
+    background: #f39c12;
+}
+
+.delete-btn {
+    background: #e74c3c;
+}
+
+.not-provided {
+
+    color: #999;
+
+    font-style: italic;
+
+}
+
+
+
+/* Modal css */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.edit-modal {
+    width: 450px;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.2);
+}
+
+.edit-modal h2 {
+    margin-bottom: 25px;
+}
+
+.edit-modal input,
+.edit-modal select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.modal-buttons button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+    background: #ddd;
+}
+
+.modal-buttons button:last-child {
+    background: #1967d2;
+    color: white;
+}
+
+
+
