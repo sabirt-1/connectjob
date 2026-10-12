@@ -1,8 +1,15 @@
 
+# Virtual environments
+env/
+venv/
+.venv/
+backend/env/
+
 
 node_modules/
 dist/
 build/
+# Environment variables
 .env
 .env.local
 .env.development.local
@@ -15,6 +22,10 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Python cache
+__pycache__/
+*.py[cod]
 
 doc.txt
 git.txt

@@ -25,12 +25,27 @@ load_dotenv(BASE_DIR / ".env")
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3dyf6j3bjr42gx_=xqaee^hw5u699(*79dh^zhsbtp*gx*80z+'
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+
+if not SECRET_KEY:
+    raise RuntimeError("DJANGO_SECRET_KEY must be configured.")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = os.getenv("DJANGO_DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+    if host.strip()
+]
+
+if not DEBUG and not ALLOWED_HOSTS:
+    raise RuntimeError(
+        "DJANGO_ALLOWED_HOSTS must be configured in production."
+    )
 
 
 # Application definition
@@ -99,16 +114,21 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jobconnect_db',
-        'USER': 'root',
-        'PASSWORD': 'July@2024',
-        'HOST': 'localhost',
-        'PORT': '3306',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": os.getenv("DB_NAME", "jobconnect_db"),
+        "USER": os.getenv("DB_USER", "jobconnect_user"),
+        "PASSWORD": os.getenv("DB_PASSWORD", ""),
+        "HOST": os.getenv("DB_HOST", "127.0.0.1"),
+        "PORT": os.getenv("DB_PORT", "3306"),
     }
 }
+
+if not DATABASES["default"]["PASSWORD"]:
+    raise RuntimeError("DB_PASSWORD must be configured.")
 
 
 # Password validation
